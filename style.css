@@ -1,0 +1,116 @@
+body{
+    background-color: #FFFACD;
+}
+
+
+div > img{
+    height:30vh;
+    margin:0;
+    z-index:2;
+    padding:0px;
+    text-align:center;
+}
+
+#subHeader{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bold;
+    padding-bottom:20px;
+}
+
+.meme{  
+        position:relative;
+        margin:0;
+        padding:10px;
+        display:inline-block;
+        text-align:center;
+        align-content:center ;
+    }
+
+.meme:hover{
+    border: 5px solid black;
+    padding:1px;
+}
+
+.topWords{
+        position:absolute;
+        top: 2%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: #ffffff;
+        z-index:3;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight:900;
+        font-size:30px;
+        text-shadow: black 0px 0px 10px;
+        }
+
+
+    .bottomWords{
+        position:absolute;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+        color:#ffffff;
+        z-index:3;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight:900;
+        font-size:30px;
+        text-shadow: black 0px 0px 10px;
+    }
+
+
+#title{
+    font-family: 'Amatic SC', cursive;
+    font-size:20vh;
+    font-weight:bolder;
+}
+
+#memeInput{
+    align-items:center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:bolder;
+    padding-bottom:10px;
+    width:100vw;;
+}
+
+#submitButton{
+    margin-top:30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color:white;
+    border-radius:2px;
+}
+
+#topText, #bottomText,#imageLink{
+    width:30vw;
+}
+
+label{
+    width:10vw;
+}
+
+.delete{
+    position:absolute;
+    left:0;
+    top:50px;
+    display:none;
+}
+
+.meme:hover .delete{
+    display:block;
+    position:absolute;
+    top: 75px;
+    left: 38px;
+    z-index:1000;
+    background-color: black;
+    color:white;
+    opacity:1;
+    width:75%;
+    height:25%;
+}
+
+.meme:hover > img{
+    opacity:0.5;
+}
